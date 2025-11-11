@@ -3,7 +3,7 @@ import TaskItem from "./TaskItem";
 
 
 const TaskList = ({tasks, checkHandler, deleteTask, editTask}) => {
-    if (tasks.length === 0) return <p>Нет задач</p>;
+    if (tasks.length === 0) return ;
 
     const categoryOptions = [
         { value: "personal" },
@@ -25,7 +25,7 @@ const TaskList = ({tasks, checkHandler, deleteTask, editTask}) => {
                             task.priority === "high" ? "#ffcccc" : 
                             task.priority === "medium" ? "#fff3b0" : 
                             "#c8f7c5"} 
-                        />
+                        />  
                     ))}
                 </div>
             ))}
